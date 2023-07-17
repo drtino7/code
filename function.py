@@ -16,7 +16,7 @@ print("-------------------------")
 def math_operations(a,b):
     def addidion(a,b):
         print(a+b)
-    def substraction(a b):
+    def substraction(a,b):
         print(a-b)
     
     addition(a,b)
