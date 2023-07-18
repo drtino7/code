@@ -107,5 +107,15 @@ def my_dictionary(**kwargs):
 my_dictionary(car='red',juan='tall')
 
 
+print("-------------------------")
+#return#
+
+def my_func(a,b):
+    return a + b, a - b, a * b, a / b
+
+addition, substraction, multiplication, divition = my_func(7,4)
+
+
+print(multiplication)
 
 
