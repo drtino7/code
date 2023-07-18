@@ -15,15 +15,16 @@ function(name)
 print("-------------------------")
 def math_operations(a,b):
     def addition(a,b):
-        print(a+b)
+        result=int(a)+int(b)
+        print(result)
     def substraction(a,b):
-        print(a-b)
+        result=int(a)-int(b)
+        print(result)
     
     addition(a,b)
-    substraction(a,b
+    substraction(a,b)
 
 
-                 )
 math_operations(a,b)
 
 
@@ -56,12 +57,13 @@ global_variables()
 
 ##default parameters
 print("-------------------------")
-def addition(a,b=2,c=7):
+def addition2(a,b=2,c=7):
     ##now if i call the function with only one parameter it will add 7 to the number which i type
 
     ##only the lastest arguments can be optionals
-    print(a+b)
-addition(a,c=5)
+    result=int(a)+int(b)
+    print(result)
+addition2(a,c=5)
 
 
 
