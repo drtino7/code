@@ -59,12 +59,13 @@ class animal:
     @abstractmethod
     def sound(self):
         print("sound")
-
+#we can have no abstract methods in an abstract class
 
 class dog(animal):
    def __init__(self):
         def sound(self):
             print("guau")
-        sound()
+        sound(self)
 
 caniche = dog()
+
