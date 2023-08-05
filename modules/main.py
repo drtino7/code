@@ -1,11 +1,13 @@
 
 #import sys
+#from operations import *
 from operations import addition , substraction
-
 #sys.path.append('/home/drtino/modules')
 
 #import sayhi
 
+#dir() show a list of functions
+print(dir(addition))
 
 
 def main():
