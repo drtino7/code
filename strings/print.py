@@ -68,4 +68,29 @@ toy2 = toyy("juan",1.50)
 print(toy2)
 print(repr(toy2))
 
+string = "hello, my name Is vAlentino"
+
+#capitalize()  firts letter mayus and all in min
+
+print(string.capitalize())
+
+#title()  al first letters mayus
+
+print(string.title())
+
+#count() how many is x in y
+
+print(string.count('a'))
+
+#lower() all in min
+
+#upper() all in mayus
+
+print(string.lower().count('a'))
+
+
+#isdigit() 
+print(string.isdigit())
+
+
 
