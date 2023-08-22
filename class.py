@@ -5,7 +5,7 @@ class car:
 #if the funtion is called with _ we dont have to change it outside the class
     def on(self):
         self.off = False
-    #the self. is for referer to the functionon the class
+#the self. is for referer to the functionon the class
 
 lambo = car()
 lambo.on()  
@@ -38,13 +38,13 @@ print(truck1.off)
 
 class constructor:
 
-    #constructor
+#constructor
     def __init__(self,name):
         pass
 
     def func(self):
         a = 5
- #desconstructor
+#desconstructor
     def __del__(self):
         pass
        #func del() to use when you want 

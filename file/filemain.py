@@ -1,21 +1,32 @@
 def main():
     file = '/root/code/class.py'
     list(file)
-
+    fileadd()
 
 
 
 def list(file):
     f=open(file, 'r')
-    line = f.readlines()
-    y = 0
-    x = len(line)
+    data = f.readlines()
     print('----------------------')
     
-    while(y <= x ):
-        line = f.readlines(y)
-        print(line)
-        y = y + 1
+    
+    for lines in data:
+        if not(lines[0] == '#'):
+          print(lines)  
+
+
+def fileadd():
+    f = open('test.py', 'w')
+    f.write('a = 5 \nb = 7\nc = a+ b \nprint(c)')
+
+
+
+
+
+
+
+
 
 
 
