@@ -47,13 +47,6 @@ def main():
         label2=tkinter.Label(window,text="hii",bg="purple",fg="green")
         label2.place(relx=0.10,rely=0.15,relwidth=0.5,anchor='ne')
         
-            
-        
-
-        
-        
-        
-        
     def widget(): 
         window.columnconfigure(0, weight=1)
         window.columnconfigure(0, weight=3)
@@ -84,8 +77,7 @@ def main():
         selected2 = tkinter.StringVar()
         checkbox=ttk.Checkbutton(window,text='accept?',variable=selected2)#comand=myfunc)
         checkbox.grid(column=0,row=4)
-        
-        
+         
     def event():
         
         
@@ -97,9 +89,7 @@ def main():
         buttom4.pack()
         buttom4.bind('buttom-1', sayhi)
         buttom4.bind('Double-1', sayhi)
-        
-                
-    event()
+    
     window.mainloop()
 
     
