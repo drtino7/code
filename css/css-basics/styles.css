@@ -1,0 +1,32 @@
+/*comentary*/
+
+h1 {
+color:red;
+font-size: 40pt;
+}
+
+p{
+    color:blue;
+}
+
+p#news{ /*id*/
+color:aqua;
+font-size:15pt;
+text-decoration:underline;
+}
+
+.sections{ /*class*/
+color:brown;
+font-size:20pt;
+text-transform: uppercase;
+}
+
+*{
+color:yellow;
+}
+
+.yes , .no , .idk, #hello{
+
+color:burlywood;
+
+}
