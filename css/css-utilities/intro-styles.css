@@ -45,11 +45,11 @@ border-style: solid;
 margin:10px;/*1 height, 1 left/right, 1 buttom*/
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
 html{
 font-family: 'Quicksand', sans-serif;
 font-size:10pt;
 font-weight:700;
-
-
 }
 

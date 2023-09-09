@@ -1,0 +1,46 @@
+.div1{
+background-color: red;
+/*display:block;*/
+}
+
+.div2{
+background-color: red;
+}
+.span{
+float:right;
+}
+
+li{
+border-style: solid;
+margin:5px;
+}
+
+.static{
+
+}
+
+.relative{
+position: relative;
+left:80px;
+z-index:10;
+}
+
+.fixed{
+position:fixed;
+background-color: bisque;
+margin:20px;
+bottom:0px;
+left:0px;
+}
+
+.absolute{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+.sticky{
+    position:sticky;
+    top:0px;
+    z-index:10;
+}
+
