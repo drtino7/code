@@ -1,0 +1,55 @@
+/*colours*/
+.colours-hex{
+color:#89beb6;
+}
+.rgb{
+color:rgb(126,255,255);
+
+}
+.rgba{
+color:rgba(10,255,10,0.7);
+}
+/*background*/
+
+.background{
+color:blue;
+background-color:red ;
+background-image: url("https://th.bing.com/th/id/OIP.O6pYKXC259BgXSj6H3L0qwHaEK?w=271&h=180&c=7&r=0&o=5&pid=1.7");
+background-position:center bottom ;
+}
+
+/*size*/
+.wide{
+background-color: red;
+width:100px;
+}
+.height{
+background-color: aqua;
+height:20px;
+width:50px;
+}
+
+.card1{
+border-style: solid;
+border-color:red;
+border-width:15px;
+/*border-top:none;*/
+}
+.card2{
+border-style: solid;
+padding:70px 70px 20px;
+}
+
+.card3{
+border-style: solid;
+margin:10px;/*1 height, 1 left/right, 1 buttom*/
+}
+
+html{
+font-family: 'Quicksand', sans-serif;
+font-size:10pt;
+font-weight:700;
+
+
+}
+
