@@ -1,3 +1,8 @@
+div{
+border-style:solid;
+margin:5px;
+
+}
 .div1{
 background-color: red;
 /*display:block;*/
@@ -44,3 +49,37 @@ left:0px;
     z-index:10;
 }
 
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    height:150px;
+    width:300px;
+    /*justify-content: start;
+    justify-content: center;
+    justify-content: space-between;*/
+    justify-content: space-around;
+    /*align-items: stretch;*/
+    align-items: left;
+}
+
+.div3{
+    background-color:lightblue;
+    border-style:solid;
+    height:17px;
+    width:30px;
+}
+
+.div4{
+    background-color:lightblue;
+    border-style:solid;
+    height:17px;
+    width:30px;
+}
+
+.div5{
+    background-color:lightblue;
+    border-style:solid;
+    height:17px;
+    width:30px;
+}
