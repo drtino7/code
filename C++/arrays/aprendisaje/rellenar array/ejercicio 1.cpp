@@ -1,5 +1,4 @@
 #include<iostream>
-#include<conio.h>
 #include<string.h>
 using namespace std;
 int main(){
@@ -29,6 +28,6 @@ int main(){
 	cin.getline(nombreb,5,'\n');
 	cout<<nombreb;
 	
-	getch();
+	
 	return 0;
 }
