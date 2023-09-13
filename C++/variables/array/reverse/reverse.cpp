@@ -1,15 +1,14 @@
 #include<iostream>
-#include<conio.h>
 #include<string.h>
+#include<algorithm>
+
 using namespace std;
 int main(){
 	
 	char name[] = "tino";
-	
-	strrev(name);
+	int len = strlen(name);
+	reverse(name , name + len);
 	
 	cout<<name;
-	
-	getch();
 	return 0;
 }
