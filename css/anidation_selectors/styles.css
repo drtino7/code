@@ -1,0 +1,126 @@
+.h1{
+color:red;
+margin:0px;
+}
+
+/*
+.fish{
+color:green;
+}
+
+*/
+.container{
+display:flex;
+gap:10px;
+width: 500px;
+height:50px;
+}
+
+.container p{
+color:green;
+}
+
+.hover{
+border-style: solid;
+height:150px;
+height:150px;
+background-color:antiquewhite;
+}
+
+.hover:hover{
+/*true when cursor touch it :)*/
+background-color:bisque;
+}
+
+.seudo-class{
+
+
+}
+
+.list{
+    border-style: solid;
+    height:100px;
+    height:100px;
+    background-color:aquamarine;
+    padding:5px;
+    margin-top:5px;
+
+}
+.list p:first-child{
+background-color: brown;
+}
+
+a:link{
+color:red
+}
+
+a:visited{
+color:greenyellow;
+}
+a:active{
+color:aqua;
+}
+
+
+.container2{
+width:300px;
+height:150px;
+border-style: solid;
+border-color:brown;
+}
+
+.container2 p{
+font-style: italic;
+}
+
+.container2 p::before{
+    content:'<<';
+}
+.container2 p::after{
+    content:'>>';
+}
+.book{
+    width:300px;
+    height:50px;
+    border-style: solid;
+    border-color:green;
+    margin-top:10px;
+    padding:0px;
+}
+
+.book::first-letter{
+font-size:xx-large;
+}
+
+.book::first-line{
+    color:red;
+}
+
+.book::selection{
+background-color:gray;
+}
+
+.list2 li::marker{
+color:red;
+}
+
+h2{
+color:red;
+}
+.h2-class{
+    color:yellow;
+}
+#h2-id{
+    color:green;
+}
+
+p{
+color:aquamarine !important;
+}
+.p-class{
+color:blueviolet;
+}
+p #p-id\ id-2p .p-class{
+    color:darkcyan;
+}
+
