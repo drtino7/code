@@ -1,4 +1,4 @@
-//aprendisaje 2  copiar contenido funcion strcpy()
+//aprendisaje 2  copyr contenido funcion strcpy()
 #include<iostream>
 #include<conio.h>
 #include<string.h>
