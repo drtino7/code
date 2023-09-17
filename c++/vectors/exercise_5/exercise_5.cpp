@@ -1,5 +1,4 @@
 #include<iostream>
-#include<conio.h>
 using namespace std;
 int main(){
 	int list[100],number,higher_number = 0;
@@ -15,6 +14,6 @@ int main(){
 		
 }
 cout<<higher_number<<endl;	
-getch();
+
 return 0;
 }

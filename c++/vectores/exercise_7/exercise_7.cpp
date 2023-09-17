@@ -1,5 +1,5 @@
 #include<iostream>
-#include<conio.h>
+
 using namespace std;
 int main() {
 	char vec1[] = { 'a','b','c' };
