@@ -52,7 +52,7 @@ HTML (HyperText Markup Language) is a markup language that defines the structure
 Some of the HTML code snippets and projects in this repository are:
 
 Hello World: A simple web page that displays “Hello, World!” as a heading.
-Resume: A web page that displays a resume with personal information, education, skills, work experience, and hobbies.
+Resume: A web page that displays a resume with personl information, education, skills, work experience, and hobbies.
 Calculator: A web page that displays a calculator with buttons for digits and operators.
 Gallery: A web page that displays a gallery of images with captions and links.
 Quiz: A web page that displays a quiz with multiple choice questions and feedback.

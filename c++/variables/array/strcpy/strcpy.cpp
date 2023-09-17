@@ -4,12 +4,12 @@
 #include<string.h>
 using namespace std;
 int main(){
-	char nombre[] = "valentino";
-	char nombreb[20];
+	char name[] = "valentino";
+	char nameb[20];
 	
-	strcpy(nombreb,nombre);
+	strcpy(nameb,name);
 	
-	cout<<nombre;
+	cout<<name;
 	
 getch();
 return 0;

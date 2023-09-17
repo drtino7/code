@@ -10,7 +10,7 @@ int main() {
 
 	for (int i = 0; i <= 4; i++) {
 		if (vector[i] == sumat - vector[i]){
-			cout << vector[i] << " es la suma de todos los numeros" << endl;}
+			cout << vector[i] << " es la suma de todos los numbers" << endl;}
 
 	}
 
