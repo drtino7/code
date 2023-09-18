@@ -1,5 +1,4 @@
 #include<iostream>
-#include<conio.h>
 #include<string.h>
 using namespace std;
 int main(){
@@ -9,6 +8,5 @@ int main(){
 	lenght = strlen(word);
 	cout<<word<<" has "<<lenght<<" digits;";
 	
-getch();
 return 0;
 }

@@ -1,10 +1,10 @@
 #include<iostream>
-#include<conio.h>
 #include<string.h>
+
 using namespace std;
 int main(){
-	char cat1[] = "hola";
-	char cat2[] = " de nuevo";
+	char cat1[] = "hi";
+	char cat2[] = " hi again";
 	char cat3[20];
 	
 	strcpy(cat3,cat1);
@@ -13,6 +13,5 @@ int main(){
 	cout<<cat3<<endl;	
 	
 	 
-	getch();
 	return 0;
 }

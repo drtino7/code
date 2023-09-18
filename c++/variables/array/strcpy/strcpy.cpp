@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 //aprendisaje 2  copyr contenido funcion strcpy()
+=======
+
+>>>>>>> aba2b67 (compiled arrays)
 #include<iostream>
-#include<conio.h>
 #include<string.h>
 using namespace std;
 int main(){
@@ -11,6 +14,6 @@ int main(){
 	
 	cout<<name;
 	
-getch();
+
 return 0;
 }
