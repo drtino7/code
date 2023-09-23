@@ -6,7 +6,7 @@ Contents:
 <li>Python</li>
 <li>C++</li>
 <li>JavaScript</li>
-<li>HTML</li>
+<li>HTML5</li>
 <li>CSS</li>
 </ul>
 
@@ -34,11 +34,11 @@ Binary Search Tree: A program that implements a binary search tree data structur
 Snake Game: A graphical game that lets the user control a snake that grows longer as it eats food items on the screen.</p>
 
 
-<h2>HTML</h2>
+<h2>HTML5</h2>
 
-<p>HTML (HyperText Markup Language) is a markup language that defines the structure and content of web pages. It uses tags to specify different elements such as headings, paragraphs, lists, tables, images, links, forms, and more. It is the standard language for creating web pages and web applications.
+<p>HTML5 (HyperText Markup Language) is a markup language that defines the structure and content of web pages. It uses tags to specify different elements such as headings, paragraphs, lists, tables, images, links, forms, and more. It is the standard language for creating web pages and web applications.
 
-Some of the HTML code snippets and projects in this repository are:
+Some of the HTML5 code snippets and projects in this repository are:
 
 Hello World: A simple web page that displays “Hello, World!” as a heading.
 Resume: A web page that displays a resume with personl information, education, skills, work experience, and hobbies.
@@ -48,7 +48,7 @@ Quiz: A web page that displays a quiz with multiple choice questions and feedbac
 
 <h2>CSS</h2>
 
-<p>CSS (Cascading Style Sheets) is a style sheet language that describes the presentation and layout of web pages. It uses rules to specify how HTML elements should look like in terms of colors, fonts, backgrounds, borders, margins, padding, alignment, and more. It is used to enhance the appearance and usability of web pages and web applications.
+<p>CSS (Cascading Style Sheets) is a style sheet language that describes the presentation and layout of web pages. It uses rules to specify how HTML5 elements should look like in terms of colors, fonts, backgrounds, borders, margins, padding, alignment, and more. It is used to enhance the appearance and usability of web pages and web applications.
 
 Some of the CSS code snippets and projects in this repository are:
 
