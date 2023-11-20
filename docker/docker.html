@@ -27,7 +27,7 @@
 
     <h3>how to creat a container</h3>
     <code class="code">docker container create python</code>    
-    <h2>how to start the container</h2>
+    <h3>how to start the container</h3>
     <p>for starting a container we need the id or the name of the container, the id is the output of the comand "docker container create python"</p>
     <img src="images/idcontainer.png">
     <p>now we start the container</p>
@@ -67,11 +67,6 @@
     <p>for using variables with the docker run</p>
     <code>docker run --name mycontainer -p27017:27017 -d mongo</code>
 
-
-
-    <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </footer>
 
    
     <h2>conect to container</h2>
@@ -126,10 +121,10 @@
             <p>thest for building the recent DockerFile </p>
 
             <p>first we need to enter to the directory of the file</p>
-            <code>cd "rute to directory"</code>
+        <code>cd "rute to directory"</code>
             <p>then we built it</p>
 
-            <code>docker build -t myapp:1.0.0 Dockerfile</code>
+        <code>docker build -t myapp:1.0.0 Dockerfile</code>
 
             <ul>
                 <li>FROM: the mage that we will use</li>
@@ -142,11 +137,11 @@
             <h2>networks</h2>
             <p>is needed when we want to use more than one image </p>
             <h3>list networks</h3>
-            <code>docker network ls</code>
+        <code>docker network ls</code>
             <h3>create network</h3>
-            <code>docker network create my_network</code>
+        <code>docker network create my_network</code>
             <h3>remove network</h3>
-            <code>docker network rm my_network</code>
+        <code>docker network rm my_network</code>
 
             <h3>create an a container of a network</h3>
             <p>first we create one container, in this case is mongo</p>
@@ -154,5 +149,117 @@
             <p>and the we create python</p>
             <code>docker create -p3000:3000 --name mycontainer2 --network my_network   python</code>
 
+
+            <h2>docker compose</h2>
+            <h3>how to build a dockercompose.yml</h3>
+<code><pre>version: "3.9"
+services:
+    mycontainer1:
+        build: .
+        ports:
+            - "3000:3000"
+        links: 
+            - mycontainer2      
+    mycontainer2:
+        image: mongo
+        ports:
+            - "27017:27017"
+        environment: 
+            - MONGO_INITDB_ROOT_USERNAME=drtino
+            - MONGO_INITDB_ROOT_PASSWORD=password123</pre></code>
+
+            <h3>how to compose</h3>
+            <code>docker compose up</code>
+            <h3>how to stop docker compose up</h3>
+            <code><kbd>CRTL</kbd> + <kbd>C</kbd></code> 
+            <h3>how to delete container, images and networks from docker-compose</h3>
+            <code>docker compose down</code>
+
+    <h2>volumes</h2>
+    <h3>types of volumes</h3>
+    <ul>
+        <li>anonymous</li>
+        <li>host</li>
+        <li>named</li>
+    </ul>
+
+    <h3>how to build a volume</h3>
+<code><pre>version: "3.9"
+    services:
+        mycontainer1:
+            build: .
+            ports:
+                - "3000:3000"
+            links: 
+                - mycontainer2      
+        mycontainer2:
+            image: mongo
+            ports:
+                - "27017:27017"
+            environment: 
+                - MONGO_INITDB_ROOT_USERNAME=drtino
+                - MONGO_INITDB_ROOT_PASSWORD=password123
+            volumes:
+                - mongo-data: /data/db
+            
+volumes:
+    mongo-data:</pre></code>
+    <p>then in terminal:</p>
+    <code>docker compose up</code>
+
+    <h2>dockerfile.dev</h2>
+    <p>for spliting the docker file we need to diferent documents</p>
+
+    <h4>docker-compose-dev.yml</h4>
+<code><pre>
+version: "3.9"
+services:
+    mycontainer1:
+        build: 
+            context: .
+            dockerfile: Dockerfile.dev
+        ports: 
+             - "3000:3000"
+        links: 
+            - mycontainer2
+        volumes:
+            - .:/home/app    
+    mycontainer2:
+        image: mongo
+        ports:
+            - "27017:27017"
+        environment: 
+            - MONGO_INITDB_ROOT_USERNAME=drtino
+            - MONGO_INITDB_ROOT_PASSWORD=password123
+        volumes:
+            - mongo-data: /data/db
+                
+volumes:
+    mongo-data:</pre></code>
+
+<h4>Dockerfile.dev</h4>
+<code>FROM python
+    <br>
+    <br>
+    RUN mkdir -p /home/app
+    <br>
+    <br>
+    WORKDIR /home/app
+    <br>
+    <br>
+    COPY . /home/app
+    <br>
+    <br>
+    EXPOSE 3000
+    <br>
+    <br>
+    CMD ["python3","mongo.py"]</code>
+
+    <h3>starting the file</h3>
+    <code>docker compose -f docker-compose-dev.yml up</code>
+
+    <footer>
+        <p>&copy; 2023 docker. All rights reserved.</p>
+    </footer>
 </body>
 </html>

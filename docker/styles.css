@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
     color: #28a745; /* Green */
 }
 
@@ -96,3 +96,63 @@ img{
     border-radius: 4px;
     display:flex;
 }
+pre{
+font-size:16px;
+}
+
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    animation: color-change 5s infinite;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: red;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: green;
+    }
+  }
+
+  
+h2{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 0 10px 0;
+    padding: 0 0 0 20px;
+    position: relative;
+  }
+  
+  li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #f44336;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  li:nth-child(2n):before {
+    background-color: #4caf50;
+  }
+  
+  li:nth-child(3n):before {
+    background-color: #2196f3;
+  }
