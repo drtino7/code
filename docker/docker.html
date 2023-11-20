@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOCKER</title>
+</head>
+<body>
+
+    <h1>how to use docker</h1>
+    <h2>images</h2>
+    <h3>how to donwload an image</h3>
+    <p>this comand depends on what image you want to donload, for example now we are trying to doneload python.</p>
+    <code class="code">docker pull python</code>
+    <p>also we can download diferent vercions or tags, using the ' : ' caracter. the default is :lastest</p>
+    <code class="code">docker pull python:3.9</code>
+    <h4>how to ckeck whats images we have donwloaded</h4> 
+    <code class="code">docker images</code>
+    <div id="codeImage"></div>
+        <img id="dockerImages" src="images/docker images.png">
+    </div>
+    <h3>how to remove an image</h3>
+    <code class="code">docker images rm python</code>
+
+    <h2>container</h2>
+
+    <h3>how to creat a container</h3>
+    <code class="code">docker container create python</code>    
+    <h2>how to start the container</h2>
+    <p>for starting a container we need the id or the name of the container, the id is the output of the comand "docker container create python"</p>
+    <img src="images/idcontainer.png">
+    <p>now we start the container</p>
+    <code class="code">docker start 269eb7fa04f6e1d7e10bd7c09d4cc8ead0df6dc0b78486f6efc6158b8b5e9711</code>
+    
+    <h3>verify the started container</h3>
+    <p>shows the active containers</p>
+    <code>docker ps</code>
+    <p>shows every container started or not</p>
+    <code>docker ps -a</code>
+
+    <h3>stop container</h3>
+    <code>docker stop 269eb7fa04f6e1d7e10bd7c09d4cc8ead0df6dc0b78486f6efc6158b8b5e9711</code>
+
+    <h3>how to remove a container</h3>
+    <code>docker rm 269eb7fa04f6e1d7e10bd7c09d4cc8ead0df6dc0b78486f6efc6158b8b5e9711</code>
+
+    <h3>how to name a container</h3>
+    <p>the name is useful because you can replace the id of the container with the name</p>
+    <code>docker create --name mycontainer mongo</code>
+
+    <h3>ports</h3>
+    <p>for mapping the host ports with the vm ports</p>
+    <code>docker create -p"host port":"container port"  --name mycontainer mongo</code>
+    <p>if we dont assign the port, docker will do it for us, its not recomended</p>
+
+    <h3>how to check logs</h3>
+    <code>docker logs mycontainer</code>
+    <p>if we want to say listening we can do this:</p>
+    <code>docker logs --follow mycontainer</code>
+
+    <h3>how to run a container</h3>
+    <code>docker run mongo</code>
+    <p>this comand cheks if we have the image, if not docker will donwload. docker will create a container. and the it will start it</p>
+    <p>it will be started as --follow, if we dont wan this we can do: </p>
+    <code>docker run -d mongo</code>
+    <p>for using variables with the docker run</p>
+    <code>docker run --name mycontainer -p27017:27017 -d mongo</code>
+
+
+
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+
+   
+    <h2>conect to container</h2>
+    <h3>envioermental variables</h3>
+    <p>this is an example of enviormental variables of mongo</p>
+    <img src="images/enviormentalvariables.png">
+
+    <p>in case of mongo this are the variables</p>
+    <ul>
+        <li>MONGO_INITDB_ROOT_USERNAME</li>
+        <li>MONGO_INITDB_ROOT_PASSWORD</li>
+    </ul>
+
+    <h3>how to declare enviormental variables</h3>
+    <code>docker create -p27017:27017 --name mycontainer -e MONGO_INITDB_ROOT_USERNAME=drtino -e MONGO_INITDB_ROOT_PASSWORD=password123  mongo</code>
+
+    <h3>example of how it works</h3>
+    <p>this is an example of python</p>
+    <code id="python">import pymongo 
+        <br>
+        <br>
+        myclient = pymongo.MongoClient("mongodb://drtino:password123@localhost:27017/")
+        <br>
+        <br>
+        mydb = myclient["mydatabase"]
+        <br>
+        <br>
+        mycol = mydb["customers"]
+        <br>
+        <br>
+        print(myclient.list_database_names())
+        
+        </code>
+
+        <h2>Dockerfile</h2>
+
+        <h3>how to build a Dockerfile</h3>
+
+        <code>FROM python
+            <br>
+            <br>
+            RUN mkdir -p /home/app
+            <br>
+            <br>
+            COPY . /home/app
+            <br>
+            <br>
+            EXPOSE 3000
+            <br>
+            <br>
+            CMD ["python3","/home/app/mongo.py"]</code>
+            <p>thest for building the recent DockerFile </p>
+
+            <p>first we need to enter to the directory of the file</p>
+            <code>cd "rute to directory"</code>
+            <p>then we built it</p>
+
+            <code>docker build -t myapp:1.0.0 Dockerfile</code>
+
+            <ul>
+                <li>FROM: the mage that we will use</li>
+                <li>RUN: executes a command of the VM</li>
+                <li>COPY: can conect to the host for copying files</li>
+                <li>EXPOSE: expose an a port</li>
+                <li>CMD: comand for executing file, first the compiler and the the argumnets</li>
+            </ul>
+
+            <h2>networks</h2>
+            <p>is needed when we want to use more than one image </p>
+            <h3>list networks</h3>
+            <code>docker network ls</code>
+            <h3>create network</h3>
+            <code>docker network create my_network</code>
+            <h3>remove network</h3>
+            <code>docker network rm my_network</code>
+
+            <h3>create an a container of a network</h3>
+            <p>first we create one container, in this case is mongo</p>
+            <code>docker create -p27017:27017 --name mycontainer1 --network my_network -e MONGO_INITDB_ROOT_USERNAME=drtino -e MONGO_INITDB_ROOT_PASSWORD=password123  mongo</code>
+            <p>and the we create python</p>
+            <code>docker create -p3000:3000 --name mycontainer2 --network my_network   python</code>
+
+</body>
+</html>
