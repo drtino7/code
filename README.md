@@ -8,12 +8,9 @@
   Welcome to the Code Repository! 🚀 This vibrant collection of code snippets and examples is your playground for exploring various programming languages and technologies. Whether you're a beginner or an experienced developer, find inspiration and knowledge here! 
 </p>
 
-
 <h1 align="center">
   <img src="assets/badge-flat.svg" alt="awesome logo">
-
 </h1>
-
 <!-- Language Section -->
 ## 🚀 Languages
 
