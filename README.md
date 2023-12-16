@@ -1,59 +1,127 @@
-<h1>CODE</h1>
-This is a repository of various code snippets and projects that I have created or collected over time. Some of them are for fun, some of them are for learning, and some of them are for solving problems.
+<!DOCTYPE html>
+<html lang="en">
 
-Contents:
-<ul>
-<li>Python</li>
-<li>C++</li>
-<li>JavaScript</li>
-<li>HTML5</li>
-<li>CSS</li>
-</ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Repository</title>
+</head>
 
-<h2>PYTHON</h2>
-<p>Python is a high-level, interpreted, and general-purpose programming language that emphasizes readability and simplicity. It supports multiple paradigms such as object-oriented, functional, procedural, and imperative. It is widely used for data analysis, web development, scripting, automation, and more.
+<body>
 
-Some of the Python code snippets and projects in this repository are:
+  <header>
+    <h1>Code Repository</h1>
+    <p>This repository contains code snippets and examples in various programming languages and technologies.</p>
+  </header>
 
-Hello World: A simple program that prints “Hello, World!” to the standard output.
-Fibonacci: A program that generates the Fibonacci sequence up to a given number using recursion.
-Hangman: A text-based game that lets the user guess a random word letter by letter.
-Tic Tac Toe: A graphical game that lets two players take turns to mark the spaces in a 3x3 grid with X or O symbols.
-Calculator: A graphical application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+  <section>
+    <h2>Languages</h2>
+    <ul>
+      <li>
+        <strong>HTML:</strong>
+        <ul>
+          <li>
+            <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It provides the
+              basic structure of a web page and is essential for web development.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>CSS:</strong>
+        <ul>
+          <li>
+            <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document
+              written in HTML or XML. It enhances the visual appeal and layout of web pages.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Python:</strong>
+        <ul>
+          <li>
+            <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It is
+              versatile and widely used in various domains, including web development, data science, and automation.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Docker:</strong>
+        <ul>
+          <li>
+            <p>Docker is a platform for developing, shipping, and running applications in containers. Containers allow
+              developers to package an application with its dependencies into a standardized unit for seamless
+              deployment.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>SQL:</strong>
+        <ul>
+          <li>
+            <p>SQL (Structured Query Language) is a domain-specific language used for managing and manipulating
+              relational databases. It allows users to perform operations like querying data, updating records, and
+              defining database structures.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Jupyter Notebook:</strong>
+        <ul>
+          <li>
+            <p>Jupyter Notebook is an open-source web application that allows the creation and sharing of live code,
+              equations, visualizations, and narrative text. It is widely used for data analysis, machine learning, and
+              scientific research.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>C++:</strong>
+        <ul>
+          <li>
+            <p>C++ is a general-purpose programming language known for its efficiency and performance. It is widely used
+              in system programming, game development, and other applications where low-level memory manipulation is
+              crucial.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
 
-<h2>C++</h2>
+  <section>
+    <h2>Files</h2>
+    <ul>
+      <li><code>index.html</code>: HTML file for a simple web page.</li>
+      <li><code>styles.css</code>: CSS file for styling the web page.</li>
+      <li><code>Dockerfile</code>: Docker configuration for containerization.</li>
+      <li><code>queries.sql</code>: SQL queries for database operations.</li>
+      <li><code>analysis.ipynb</code>: Jupyter Notebook for data analysis.</li>
+      <li><code>main.cpp</code>: C++ source code for a specific functionality.</li>
+      <li><code>example.py</code>: Python script demonstrating a specific feature or functionality.</li>
+    </ul>
+  </section>
 
-<p>C++ is a compiled, low-level, and general-purpose programming language that supports multiple paradigms such as object-oriented, procedural, generic, and functional. It is an extension of the C language with additional features such as classes, inheritance, polymorphism, templates, and exceptions. It is widely used for system programming, game development, embedded systems, and more.
+  <section>
+    <h2>Usage</h2>
+    <ol>
+      <li>Open <code>index.html</code> in a web browser to view the basic web page.</li>
+      <li>Customize the appearance of the web page by modifying the <code>styles.css</code> file.</li>
+      <li>Replace or add images in the <code>images/</code> directory as needed.</li>
+    </ol>
+  </section>
 
-Some of the C++ code snippets and projects in this repository are:
+  <section>
+    <h2>Contributing</h2>
+    <p>If you'd like to contribute to the project, please follow the guidelines in <a
+        href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+  </section>
 
-Hello World: A simple program that prints “Hello, World!” to the standard output.
-Factorial: A program that calculates the factorial of a given number using recursion.
-Bubble Sort: A program that sorts an array of integers using the bubble sort algorithm.
-Binary Search Tree: A program that implements a binary search tree data structure with operations such as insertion, deletion, search, traversal, and height.
-Snake Game: A graphical game that lets the user control a snake that grows longer as it eats food items on the screen.</p>
+  <section>
+    <h2>License</h2>
+    <p>This project is licensed under the <a href="LICENSE">MIT License</a> - see the <a href="LICENSE">LICENSE</a> file
+      for details.</p>
+  </section>
 
+</body>
 
-<h2>HTML5</h2>
+</html>
 
-<p>HTML5 (HyperText Markup Language) is a markup language that defines the structure and content of web pages. It uses tags to specify different elements such as headings, paragraphs, lists, tables, images, links, forms, and more. It is the standard language for creating web pages and web applications.
-
-Some of the HTML5 code snippets and projects in this repository are:
-
-Hello World: A simple web page that displays “Hello, World!” as a heading.
-Resume: A web page that displays a resume with personl information, education, skills, work experience, and hobbies.
-Calculator: A web page that displays a calculator with buttons for digits and operators.
-Gallery: A web page that displays a gallery of images with captions and links.
-Quiz: A web page that displays a quiz with multiple choice questions and feedback.</p>
-
-<h2>CSS</h2>
-
-<p>CSS (Cascading Style Sheets) is a style sheet language that describes the presentation and layout of web pages. It uses rules to specify how HTML5 elements should look like in terms of colors, fonts, backgrounds, borders, margins, padding, alignment, and more. It is used to enhance the appearance and usability of web pages and web applications.
-
-Some of the CSS code snippets and projects in this repository are:
-
-Hello World: A style sheet that applies some basic styles to the hello world web page.
-Resume: A style sheet that applies some advanced styles to the resume web page.
-Calculator: A style sheet that applies some grid and flexbox styles to the calculator web page.
-Gallery: A style sheet that applies some animation and transition styles to the gallery web page.
-Quiz: A style sheet that applies some responsive and media query styles to the quiz web page.</p>
