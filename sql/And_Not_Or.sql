@@ -10,3 +10,6 @@ SELECT * FROM user WHERE (name = "maria" AND surname = "lopez") OR (name = "juan
 SELECT * FROM user WHERE NOT age > 20
 SELECT * FROM user WHERE NOT age > 20 AND  NOT  name = "maria" ORDER BY RANDOM() LIMIT 2  
 
+--diference between != and not
+--!= is not equal
+--not is not

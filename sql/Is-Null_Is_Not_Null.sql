@@ -1,0 +1,7 @@
+SELECT * FROM user WHERE name IS NOT NULL ORDER BY id_user;
+SELECT * FROM user WHERE name IS NULL ORDER BY id_user;
+
+DELETE FROM user WHERE name IS NULL;
+DELETE FROM user WHERE name IS NOT NULL;
+
+
