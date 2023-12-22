@@ -42,3 +42,7 @@ ORDER BY RANDOM()
 
 SELECT DISTINCT age FROM user;
 SELECT DISTINCT age FROM user ORDER BY age;
+
+--CONCATENATE
+
+SELECT name || "  " || age AS name_age FROM user

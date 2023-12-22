@@ -20,3 +20,5 @@ conn.close()
 #    cursor = conn.cursor()
 #    execution = cursor.execute("SELECT * FROM user")
 #    data = pandas.DataFrame(execution)
+
+#pd.read_sql_query(query, conn)
