@@ -37,4 +37,4 @@ sales,
 (SELECT name FROM productcs WHERE sal.product_id = product_id)AS name,
 (SELECT price FROM productcs WHERE sal.product_id = product_id)AS price
 FROM sales AS sal
-WHERE price > 100)S
+WHERE price > 100)
