@@ -1,4 +1,4 @@
-##select return a table
+--select return a table
 
 CREATE TABLE user(
 name TEXT,
@@ -15,7 +15,7 @@ SELECT * FROM user;
 SELECT age FROM user;
 SELECT age,name FROM user;
 
-#as
+--as
 
 SELECT age AS _age_ FROM  user;
 SELECT age AS _age_,name AS _name_ FROM  user;
@@ -27,7 +27,7 @@ ORDER BY age DESC
 ORDER BY NAME ASC
 ORDER BY NAME DESC
 
-ORDER BY name,age   #if the same will check age
+ORDER BY name,age   --if the same will check age
 
 SELECT * FROM user
 ORDER BY age DESC, name ASC;
@@ -38,8 +38,7 @@ ORDER BY NAME DESC NULLS FIRST
 ORDER BY RANDOM()
 
 
-#DISTINCT
+--DISTINCT
 
 SELECT DISTINCT age FROM user;
 SELECT DISTINCT age FROM user ORDER BY age;
-
