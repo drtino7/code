@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:red;font-size:50px;text-align:center;">hello {{name|upper}}</h1>
+    <h2>categories:</h2>
+    <p>{{categories}}</p>
+    <ul>
+          <!--comentary html-->
+        {#comantary python which will not be render#}
+        {% comment %}
+        commentary
+        long commentary
+        {% endcomment %}
+        {%for category in categories%}
+            {% if category == "python" %}
+                <li style="color:red">{{category|upper}}</li>
+            {% else %}
+                <li>{{category}}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <h5>number of categories: {{categories | length}}</h5>
+</body>
+</html>
