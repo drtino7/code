@@ -3,6 +3,7 @@ import numpy as np
 my_array = np.array([1,2,3,4,5,6,7,8])
 my_matriz = np.array([1,2,3],[4,5,6])
 my_matrix = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
+my_4d = mp.array([1,2,3,4,5],ndim=3)
 
 print(my_matrix.ndim)
 print(my_array[0:2])
@@ -34,3 +35,8 @@ x=np.where(arr <= 7)
 
 arr = np.array([3,0,2,1])
 arr = np.sort(arr)
+
+arr=np.array([1,2,3])
+arrc=arr.copy()#if we chang arr in the future arrc wont change
+arrv=arr.view()#if we change arr in the futere arrv will show it
+
