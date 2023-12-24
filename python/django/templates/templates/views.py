@@ -7,3 +7,4 @@ def dinamic(request,name):
     categories = ['python','java','c++']
     context = {'name' : name,'categories':categories}
     return render(request,'dinamic.html',context)
+
