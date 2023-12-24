@@ -6,7 +6,11 @@ my_list=[1,2,3]
 
 my_dict = {'apple': 1, 'banana': 2, 'orange': 3}
 
-
+#sets = set()
+sets = {1,2,3}#no order
+sets.add(4)
+sets.remove(4)
+sets.clear()
 #uses of functions#
 
 
