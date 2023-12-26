@@ -1,0 +1,22 @@
+{%extends 'base/base.html'%}
+{%load static%}
+{%block title%}photos{% endblock %}
+
+{% block content %}
+
+<div id="div-1">
+
+
+    <img id="photo1" src="{% static 'tree.jpg' %}">
+    <p class="para"> esta foto fue tomada en el 2023 y es un arbol</p>
+
+</div>
+<div id="div-2">
+
+    <img id="photo2"  src="{% static 'mountain.jpg' %}">
+    <p class="para"> esta foto fue tomada en 2023 y es una montaa de fonmdo con un lago</p>
+
+
+</div>
+
+{% endblock %}
