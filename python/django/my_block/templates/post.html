@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> authors</h1>
+    {% for Author in Authors %}
+    
+    <h3>{{Author.name}} ({{Author.email}})</h3>
+
+    {% endfor %}
+
+    <h2>total of authors: {{Authors | length}}</h2>
+
+    <h2>filtering</h2>
+
+    {% for filtering in filter %}
+
+    <h3>name: {{filtering.name}} || email:   {{filtering.email}}</h3>
+
+    {% endfor %}
+
+    <h2>author email: {{aut.email}}</h2>
+
+    {% for limited in limit%}
+
+    <p>{{limited.name}}</P>
+
+    {% endfor %}
+
+</body>
+</html>
