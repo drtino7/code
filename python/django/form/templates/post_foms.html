@@ -1,0 +1,7 @@
+<h1>creating</h1>
+
+<form method="POST" action="{% url 'postgoal' %}">
+    {% csrf_token %}
+    <input type="text" name="info" placeholder="type something">
+    <input type="submit", value="send">
+</form>
