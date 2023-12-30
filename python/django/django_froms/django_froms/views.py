@@ -23,6 +23,7 @@ def widget(request):
         else:
             return render(request, 'widget.html',{'form':contactform})
 
+
     
 
 
