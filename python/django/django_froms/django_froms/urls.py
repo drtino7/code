@@ -23,4 +23,5 @@ urlpatterns = [
     path('form/',views.form,name="form"),
     path('goal/',views.goal,name="goal"),
     path('widget/',views.widget,name="widget"),
+
 ]

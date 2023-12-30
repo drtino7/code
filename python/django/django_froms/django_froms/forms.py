@@ -8,4 +8,9 @@ class CommentForm(forms.Form):
 class ContactForm(forms.Form):
     name = forms.CharField(label='type your name', max_length=100, required=False,widget=forms.TextInput(attrs={'class':'form-control'}))
     email = forms.EmailField(label='type your email', max_length=100,widget=forms.EmailInput(attrs={'class':'form-control'}))
-    
+    def clean_name(self):
+        name = self.cleaned_data['name']
+        if name != 'open':
+            raise forms.ValidationError('bad name')
+        else:
+            return name
