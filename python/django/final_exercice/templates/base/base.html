@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'styles.css' %}" rel="stylesheet">
+  </head>
+  <body>
+  
+
+    <nav>
+      <p><a href="{% url 'contact' %}">contact</a></p>
+      <p><a href="{% url 'tasks' %}">tasks</a></p>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+    LICENCE RESERVED FOR <a href="https://github.com/drtino7/code"> DRTINO7 </a> 2024
+    </footer>
+
+  </body>
+</html>
