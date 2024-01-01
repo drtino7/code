@@ -1,7 +1,13 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
+<form method='POST' action="{% url 'crud' %}">
 
-{{form.as_p}}
+  {% csrf_token %}
 
+  {{form.as_p}}
+
+
+<input id='btn' type="submit" value='submit' class="btn btn-success">
+</form>
 {% endblock %}

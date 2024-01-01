@@ -5,4 +5,8 @@ class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
         fields = ['name','last_name','phone']
-        
+        widgets = {
+                'name': forms.TextInput(attrs={'class': 'form-control'}),
+                'last_name':forms.TextInput(attrs={'class':'form-control'}),
+                'phone':forms.TextInput(attrs={'class':'form-control'}),
+                }       

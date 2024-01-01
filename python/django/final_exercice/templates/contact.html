@@ -2,9 +2,11 @@
 
 {%block content%}
 
-<form method='POST'>
-
+<form method='POST' action="{% url 'crud' %}">
+  {% csrf_token %}
   {{form.as_p}}
+
+  <input id='btn' type='submit' value="submit" class="btn btn-success">
 
 </form>
 

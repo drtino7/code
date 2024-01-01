@@ -23,7 +23,11 @@ height:40px;
 }
 
 a{
-  paddind:5px;
+  text-decoration:none;
 }
 
-
+#btn{
+display:flex;
+justify-content:center;
+margin:15px;
+}

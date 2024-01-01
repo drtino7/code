@@ -5,3 +5,6 @@ from .forms import TaskForm
 def tasks(request):
     form = TaskForm()
     return render(request,'tasks.html',{'form':form})
+
+def crud(request):
+    return render(request,'crud_task.html',{})
