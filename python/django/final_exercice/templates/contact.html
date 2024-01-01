@@ -2,12 +2,14 @@
 
 {%block content%}
 
-<form method='POST' action="{% url 'crud' %}">
+<form method='POST' action="{% url 'crud_contact' %}">
   {% csrf_token %}
+  
   {{form.as_p}}
 
-  <input id='btn' type='submit' value="submit" class="btn btn-success">
-
+ <div class="button">
+ <input type="submit" value='submit' class="btn btn-success">
+</div>
 </form>
 
 {%endblock%}

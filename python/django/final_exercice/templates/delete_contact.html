@@ -1,0 +1,11 @@
+{% extends 'base/base.html' %}
+
+
+
+{% block content %}
+<form action="{% url 'crud_contact'%}">
+    <p>Are you sure you want to delete this contact ?</p>
+    <input type="submit" value='confirm' class="btn btn-danger" formaction="{% url 'delted_contact' contact_id%}">
+    <input type="submit" value='cancel' class="btn btn-primary" formaction="{% url 'cancel_contact' %}">
+</form>
+{% endblock %}

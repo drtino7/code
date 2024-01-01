@@ -1,1 +1,25 @@
 {% extends 'base/base.html' %}
+
+{% block content %}
+<table>
+{{id}}
+   <ul>contact 
+{% for contact in query%}
+    
+        <li>
+            <div> 
+            {{contact.name}} {{contact.last_name}} {{contact.phone}}
+            
+            <button class="btn btn-success"><a href="{% url 'update_contact' contact.id %}">update</a></button>
+            <button class="btn btn-danger"><a href="{% url 'delete_contact' contact.id %}">delete</a></button>
+             </div>
+        </li>
+    
+{% endfor %}
+    </ul>
+
+<ul>
+
+
+</table>
+{% endblock %}

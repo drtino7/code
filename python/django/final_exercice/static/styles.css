@@ -22,11 +22,12 @@ background-color:gray;
 height:40px;
 }
 
-a{
-  text-decoration:none;
+#delete{
+text-decoration-style: none;
+color:green;
 }
 
-#btn{
+.button{
 display:flex;
 justify-content:center;
 margin:15px;
