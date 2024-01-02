@@ -9,4 +9,5 @@ urlpatterns = [
     path('delete_contact/<int:id>/', views.delete_contact, name='delete_contact'),
     path('delted_contact/<int:id>/', views.delted_contact, name='delted_contact'),
     path('cancel_contact', views.cancel_contact, name='cancel_contact'),
+    path('serchbar_contact', views.serchbar_contact, name='serchbar_contact'),
         ]

@@ -1,7 +1,7 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-<form action="{%url 'updated_contact' contact_id %}" method="POST">
+<form action="{%url 'updated_tasks' task_id %}" method="POST">
 {% csrf_token %}
         {{form.as_p}}
         <input type="submit" value='submit' class="btn btn-success">

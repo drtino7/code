@@ -22,12 +22,13 @@ background-color:gray;
 height:40px;
 }
 
-#delete{
-text-decoration-style: none;
-color:green;
+.button{
+display:flex;
+justify-content:center;
+margin:15px;
 }
 
-.button{
+.serchbar{
 display:flex;
 justify-content:center;
 margin:15px;

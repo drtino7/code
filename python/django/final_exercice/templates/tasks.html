@@ -1,7 +1,7 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-<form method='POST' action="{% url 'crud_task' %}">
+<form method='POST' action="{% url 'crud_tasks' %}">
 
   {% csrf_token %}
 

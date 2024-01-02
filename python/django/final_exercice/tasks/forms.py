@@ -7,3 +7,7 @@ class TaskForm(forms.ModelForm):
         widgets = {
                 'name': forms.TextInput(attrs={'class': 'form-control'}), 'date':forms.DateInput(attrs={'class':'form-control'})
         }
+
+
+class Searchbar(forms.Form):
+    name = forms.CharField(label='search yourn name: ', max_length=100, required=False,widget=forms.TextInput(attrs={'class':'form-control'}))

@@ -6,4 +6,7 @@ class Contact(models.Model):
     name = models.CharField(max_length=255,null=False)
     last_name = models.CharField(max_length=255,null=False)
     phone = models.IntegerField()
+
+    def __str__(self):
+        return self.name
     

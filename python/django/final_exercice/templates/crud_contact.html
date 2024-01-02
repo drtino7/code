@@ -1,8 +1,20 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
+
+<div class="serchbar">
+
+<form method="GET" action="{% url 'serchbar_contact' %}">
+
+{{searchbar.as_p}}
+
+<input type="submit" value="submit" class="btn btn-success">
+
+</form>
+</div>
+
 <table>
-{{id}}
+
    <ul>contact 
 {% for contact in query%}
     
@@ -10,8 +22,8 @@
             <div> 
             {{contact.name}} {{contact.last_name}} {{contact.phone}}
             
-            <button class="btn btn-success"><a href="{% url 'update_contact' contact.id %}">update</a></button>
-            <button class="btn btn-danger"><a href="{% url 'delete_contact' contact.id %}">delete</a></button>
+            <button class="btn btn-success"><a class="text-decoration-none text-danger" href="{% url 'update_contact' contact.id %}">update</a></button>
+            <button class="btn btn-danger"><a class="text-decoration-none text-success" href="{% url 'delete_contact' contact.id %}">delete</a></button>
              </div>
         </li>
     

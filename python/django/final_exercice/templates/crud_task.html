@@ -1,1 +1,36 @@
 {% extends 'base/base.html' %}
+
+{% block content %}
+
+<div class="serchbar">
+
+<form method="GET" action="{% url 'serchbar_tasks' %}">
+
+{{searchbar.as_p}}
+
+<input type="submit" value="submit" class="btn btn-success">
+
+</form>
+</div>
+
+<table>
+   <ul>task 
+{% for task in query%}
+    
+        <li>
+            <div> 
+            {{task.name}} {{task.date}}
+            
+            <button class="btn btn-success"><a class="text-decoration-none text-danger" href="{% url 'update_tasks' task.id %}">update</a></button>
+            <button class="btn btn-danger"><a class="text-decoration-none text-success" href="{% url 'delete_tasks' task.id %}">delete</a></button>
+             </div>
+        </li>
+    
+{% endfor %}
+    </ul>
+
+<ul>
+
+
+</table>
+{% endblock %}
