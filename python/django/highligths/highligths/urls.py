@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mesages.urls')),
     path('optional/', include('optional_parameters.urls')),
+    path('first_letter/', include('first_letter.urls')),
 ]
