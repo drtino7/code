@@ -12,10 +12,11 @@ fn main() {
     }
     let _var = add_number(7);
 
+    #[allow(dead_code)] // no warn when i dont use the func
     fn get_values() -> (i32, i32) {
         (42, 77)
     }
-    //clousere
+    //clousere = lambda in python
 
                     //parameters// what to do
     let _add_one = |x: i32|         x +1;
