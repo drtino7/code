@@ -1,0 +1,56 @@
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+
+    <style>
+
+.field{
+  color:red;
+}
+
+    </style>
+
+  <form method="POST">
+
+    {% csrf_token %}
+  
+    <div>
+      <label>{{form.ussername.label_tag}}</label>
+      {{form.ussername.errors}}
+      {% render_field form.ussername class="field" hx-post="/check_username/" hx-trigger="keyup" hx-swap="outerhtml" hx-target="#ussername-error" %}
+
+      <div id="ussername-error"></div>
+
+    </div>
+
+    <div>
+  
+      <label>{{form.password1.label_tag}}</label>
+            {{form.password1.errors}}
+            {% render_field form.password1 class="field" hx-post="check_password1/" hx-trigger="keyup" hx-target="#password1-error" hx-swap="outerhtml" %}
+
+            <div id="password1-error"></div>
+    </div>
+
+    <div>
+
+    <label>{{form.password2.label_tag}}</label>
+    {{form.password2.errors}}
+    {% render_field form.password2 class="label" hx-post="check_password2/" hx-trigger="keyup" hx-target="#password2-error" hx-swap="outerhtml" %}
+
+    <div id="password2-error"></div>
+
+    </div>
+
+      <button type="submit">submit</button>
+      </form>
+  </body>
+</html>
