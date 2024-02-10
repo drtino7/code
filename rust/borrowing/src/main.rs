@@ -41,8 +41,11 @@ fn main() {
 //     String::from("hello")
 //     s
 //}
-//
-//
+
+    let x: 132 = 5;
+    let p: &i32 = &x; // memory address
+    let q: &i32 = *x; // value
+
 }
 
 
