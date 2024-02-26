@@ -39,4 +39,6 @@ fn main() {
         num = numb::parse<i32>().and_then(|n| Ok(n + 2)); // and_then func ask for a func parameter which is executed return a result
     }
 
+    type Res<i32> = Result<i32, ParseIntError>;
+
 }
