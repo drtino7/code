@@ -9,7 +9,7 @@ fn main() {
     // *refcell_2 = 77;
     // println!("{}",refcell_1);
       
-    //in contrast to cell, refcell allow us to modify values that donr implement copy trait.
+    //in contrast to cell, refcell allow us to modify values that don't implement copy trait.
     //allow to mutate inmutable values
     let mut ref_cell = refcell.borrow_mut();
     *ref_cell = String::from("world");
